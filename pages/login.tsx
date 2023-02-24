@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import useAuth from '../hook/useAuth';
+import backgroundLogin from '../assets/background-login.jpg';
 
 interface Inputs {
   email: string;
@@ -35,7 +36,7 @@ const login = () => {
       </Head>
       <Image
         alt=""
-        src="https://rb.gy/p2hphi"
+        src={backgroundLogin}
         fill
         style={{ objectFit: 'cover' }}
         className="-z-10 !hidden opacity-60 sm:!inline"
